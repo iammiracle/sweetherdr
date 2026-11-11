@@ -1,0 +1,7 @@
+# Written by Herdr into every mod folder
+mods/*/gpui-kit.d.ts
+mods/*/jsconfig.json
+*.error
+# The simulator panel's live frames
+mods/sweetsimscreen/*.jpg
+.DS_Store

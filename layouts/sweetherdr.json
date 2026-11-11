@@ -1,0 +1,219 @@
+{
+  "id": "root",
+  "cloned_from": {
+    "name": "main",
+    "version": "0.1.15"
+  },
+  "type": "row",
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "children": [
+        {
+          "id": "brand",
+          "type": "block",
+          "content": {
+            "mod": "sweetchrome"
+          },
+          "size": {
+            "px": 46
+          },
+          "window_drag": true
+        },
+        {
+          "id": "sidebar-lists",
+          "type": "column",
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "sweetspaces"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "content": {
+                "mod": "sweetagents"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            }
+          ]
+        },
+        {
+          "id": "sidebar-footer",
+          "type": "block",
+          "content": {
+            "mod": "sweetchrome",
+            "props": {
+              "footer": true
+            }
+          },
+          "size": {
+            "px": 69
+          }
+        }
+      ],
+      "size": {
+        "px": 268
+      },
+      "min": 44,
+      "max": 480,
+      "background": "chrome",
+      "resizable": false
+    },
+    {
+      "id": "work",
+      "type": "column",
+      "children": [
+        {
+          "id": "tabs",
+          "type": "block",
+          "content": {
+            "mod": "sweettabs"
+          },
+          "size": {
+            "px": 34
+          },
+          "window_drag": true
+        },
+        {
+          "id": "work-body",
+          "type": "row",
+          "children": [
+            {
+              "id": "main",
+              "type": "block",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "header": {
+                    "content": {
+                      "mod": "sweetpane"
+                    },
+                    "reveal": "always",
+                    "height": 26,
+                    "position": "top"
+                  },
+                  "background": "background",
+                  "border": {
+                    "width": 1,
+                    "color": "border"
+                  },
+                  "focus": {
+                    "width": 1,
+                    "color": "accent"
+                  },
+                  "radius": 0,
+                  "gap": 6,
+                  "lone": true
+                }
+              }
+            },
+            {
+              "id": "panel",
+              "type": "column",
+              "children": [
+                {
+                  "id": "panel-body",
+                  "type": "stack",
+                  "children": [
+                    {
+                      "id": "files",
+                      "type": "block",
+                      "content": {
+                        "mod": "sweetfiles"
+                      }
+                    },
+                    {
+                      "id": "changes",
+                      "type": "block",
+                      "content": {
+                        "mod": "sweetchanges"
+                      }
+                    },
+                    {
+                      "id": "sim",
+                      "type": "block",
+                      "content": {
+                        "mod": "sweetsim",
+                        "props": {
+                          "panel": "sim"
+                        }
+                      }
+                    },
+                    {
+                      "id": "timeline",
+                      "type": "block",
+                      "content": {
+                        "mod": "sweettimeline",
+                        "props": {
+                          "panel": "timeline"
+                        }
+                      }
+                    },
+                    {
+                      "id": "skills",
+                      "type": "block",
+                      "content": {
+                        "mod": "sweetskills",
+                        "props": {
+                          "panel": "skills"
+                        }
+                      }
+                    }
+                  ],
+                  "active": "files"
+                }
+              ],
+              "size": {
+                "px": 368
+              },
+              "min": 280,
+              "max": 900,
+              "hidden": true
+            }
+          ],
+          "padding": 6,
+          "gap": 6
+        },
+        {
+          "id": "status",
+          "type": "block",
+          "content": {
+            "mod": "sweetstatus"
+          },
+          "size": {
+            "px": 28
+          }
+        }
+      ],
+      "resizable": false
+    }
+  ],
+  "background": "canvas",
+  "terminal_padding": [
+    14,
+    12
+  ],
+  "divider": {
+    "width": 1,
+    "color": "border"
+  },
+  "titlebar": "none",
+  "traffic_lights": [
+    12,
+    16
+  ],
+  "theme": "tokyo-night",
+  "preview": "layouts/sweetherdr.svg"
+}
