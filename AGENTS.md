@@ -12,7 +12,7 @@ Edit the **live** copy in `~/.config/herdr-app`: Herdr reloads it within a secon
 
 A change is done when all three hold:
 
-1. `herdr-app check <mod folder>` passes for every mod you touched.
+1. `herdr-app check <mod folder>` passes for every mod you touched (`./check.sh` runs it on all of them and says whether the repo matches the install).
 2. `herdr-app status` shows `"errors": []`.
 3. `herdr-app shot <file.png>` shows the change in the window.
 
@@ -33,7 +33,7 @@ Every part follows the same look:
 - **Lowercase**: every label, button, heading and message the layout writes. The person's own names and data from Herdr keep their case.
 - **Edge to edge**: a row's highlight spans its list. Put the side padding on the row and none on the list.
 - **Hand cursor** on everything that takes a click.
-- **Theme colours** from `theme()`, so it follows the person's theme.
+- **Theme colours** by name from `theme()` (`chrome`, `border`, `accent`), so it follows the person's theme, light or dark.
 
 A dialog or menu of ours is opened with `frame: "none"` and draws its own frame; Herdr's frame is rounder.
 

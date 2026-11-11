@@ -24,6 +24,8 @@ Each one is written for this layout; none of those layouts' code is included. [C
 
 You need the Herdr app (0.1.15 or newer), opened at least once.
 
+**With a script:**
+
 ```sh
 git clone https://github.com/iammiracle/sweetherdr.git
 cd sweetherdr
@@ -31,6 +33,12 @@ cd sweetherdr
 ```
 
 `./install.sh --dry-run` only says what it would do.
+
+**Or ask an agent in Herdr**, the way Herdr layouts are usually added:
+
+```text
+Read ~/.config/herdr-app/AGENTS.md, then add this layout: https://github.com/iammiracle/sweetherdr
+```
 
 The installer copies the layout, its mods and three themes into `~/.config/herdr-app`, asks Herdr to check every mod, and switches Herdr to the sweetherdr layout. Anything it replaces is copied to `~/.config/herdr-app/sweetherdr/backups/<time>/` first. It does not touch your `keys.json`, `settings.json`, projects or task lists.
 
@@ -46,6 +54,8 @@ git status
 ```
 
 Then commit what changed.
+
+`./check.sh` asks Herdr to check every mod and says whether the repo matches what is installed.
 
 ## What is not in the repo
 
